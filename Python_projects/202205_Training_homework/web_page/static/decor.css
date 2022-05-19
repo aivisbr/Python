@@ -1,0 +1,23 @@
+.lbox {
+    width: 58px; 
+    height: 54px;
+    text-transform: uppercase;    
+    margin-right: 0px;
+    margin-left: 0px;
+    /*box-sizing: border-box;
+    padding: 0px;
+    line-height: 0px;
+    margin-right: 0px;
+    padding:0;
+    line-height:
+    margin:0;*/
+  }
+
+
+  .letlist {
+    width: 200px;
+  }
+
+label, input {
+    display: block;
+}

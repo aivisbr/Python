@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Galvenā lapa {% endblock %}
+
+{% block content %}
+<div>
+    <h1>Meklē vārdu</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="good_l">Derīgie burti</label>
+            <input type="text" class="form-control letlist" autocomplete="off" name="good_l" value={{gl}}>
+        </div>
+        <div class="form-group">
+            <label for="bad_l">Nederīgie burti</label>
+            <input type="text" class="form-control letlist" autocomplete="off" name="bad_l" value={{bl}}>
+        </div>
+        <p>Ja zini dažu burtu vietu, tad ievadi to šeit:</p>
+        <div class="form-row" style="width: 55%;">            
+            <div class="form-group col-md-1">                
+                <input class="form-control-lg lbox" type="text" class="form-control" autocomplete="off" maxlength="1" name="lt1" value={{l1}}>
+            </div>
+            <div class="form-group col-md-1">
+                <input class="form-control-lg lbox" type="text" class="form-control" autocomplete="off" maxlength="1" name="lt2" value={{l2}}>
+            </div>
+            <div class="form-group col-md-1">
+                <input class="form-control-lg lbox" type="text" class="form-control" autocomplete="off" maxlength="1" name="lt3" value={{l3}}>
+            </div>
+            <div class="form-group col-md-1">
+                <input class="form-control-lg lbox" type="text" class="form-control" autocomplete="off" maxlength="1" name="lt4" value={{l4}}>
+            </div>
+            <div class="form-group col-md-1">
+                <input class="form-control-lg lbox" type="text" class="form-control" autocomplete="off" maxlength="1" name="lt5" value={{l5}}>
+            </div>
+          </div>
+        <button type="submit" class="btn btn-primary">Meklēt</button>
+      </form>
+</div>
+<div>
+    <br/>
+    <p>{{wlist}}</p>
+</div>
+{% endblock %}
